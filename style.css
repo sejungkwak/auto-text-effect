@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #264653;
+    color: #e9c46a;
+    position: relative;
+}
+
+/* .text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 8000ms steps(50, end) infinite;
+    margin: auto;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    } to {
+        width: 100%;
+        max-width: fit-content;
+    }
+} */
+
+.controller {
+    position: absolute;
+    bottom: 10px;
+    background-color: #2a9d8f;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.speed {
+    display: inline;
+}
+
+#speed-controller {
+    background-color: #264653;
+    color: #e9c46a;
+    border-radius: 5px;
+    border: none;   
+    padding-left: 40px;
+    font-size: 16px;
+    width: 100px;
+    height: 37px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.buttons {
+    display: inline-block;
+    position: relative;
+}
+
+.speed-button {
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    color: #e9c46a;
+    border: 1px solid #2a9d8f;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-up {
+    right: 20px;
+    top: 9px;
+    border-top-right-radius: 5px;
+}
+
+#button-down {
+    right: 20px;
+    bottom: 9px;
+    border-bottom-right-radius: 5px;
+}
